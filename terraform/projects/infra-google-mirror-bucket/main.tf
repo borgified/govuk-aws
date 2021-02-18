@@ -168,3 +168,11 @@ resource "google_storage_transfer_job" "s3-bucket-daily-sync" {
     "google_storage_bucket_iam_member.s3-sync-bucket",
   ]
 }
+
+# Outputs
+#--------------------------------------------------------------
+
+output "bucket_name" {
+  value       = "${google_storage_bucket.govuk-mirror.name}"
+  description = "name of GCS mirror bucket"
+}

@@ -46,4 +46,6 @@ No Modules.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| bucket\_name | name of GCS mirror bucket |
